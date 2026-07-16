@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- ============================================= -->
+<!-- BROWSER TAB TITLE                              -->
+<!-- ============================================= -->
+<title>💜 Raasim &amp; Wafia Wedding Digital Invitation</title>
+<meta name="description" content="With the Infinite Mercy and Blessings of Allah (SWT), you are warmly invited to the Nikah ceremony of Wafia &amp; Mohamed Raasim.">
+<meta name="theme-color" content="#2D154F">
+
+<!-- ============================================= -->
+<!-- OPEN GRAPH (Facebook, WhatsApp, Telegram,      -->
+<!-- Instagram, Discord, LinkedIn, etc.)            -->
+<!-- ============================================= -->
+<meta property="og:title" content="Raasim &amp; Wafia Wedding Digital Invitation">
+<meta property="og:description" content="With the Infinite Mercy and Blessings of Allah (SWT), you are warmly invited to the Nikah ceremony of Wafia &amp; Mohamed Raasim.">
+<meta property="og:image" content="assets/share-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Raasim &amp; Wafia Wedding Digital Invitation">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./">
+<meta property="og:site_name" content="Raasim &amp; Wafia Wedding Digital Invitation">
+
+<!-- ============================================= -->
+<!-- TWITTER / X CARD                               -->
+<!-- ============================================= -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raasim &amp; Wafia Wedding Digital Invitation">
+<meta name="twitter:description" content="With the Infinite Mercy and Blessings of Allah (SWT), you are warmly invited to the Nikah ceremony of Wafia &amp; Mohamed Raasim.">
+<meta name="twitter:image" content="assets/share-preview.jpg">
+
+<!-- ============================================= -->
+<!-- FAVICON (wax seal)                             -->
+<!-- ============================================= -->
+<link rel="icon" href="assets/seal.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/seal.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient floating gold particles (shared canvas layer) -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- ============================================= -->
+<!-- OPENING / SEAL SCREEN                          -->
+<!-- ============================================= -->
+<section id="opening-screen">
+  <div class="opening-pattern"></div>
+
+  <div class="opening-content">
+    <p class="bismillah-arabic">بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيمِ</p>
+    <p class="bismillah-translation">In the Name of Allah,<br>The Most Gracious, The Most Merciful</p>
+
+    <button id="seal-button" aria-label="Tap the seal to open your invitation">
+      <span class="seal-glow"></span>
+      <img src="assets/seal.png" alt="Wax seal" class="seal-image">
+    </button>
+
+    <p class="tap-hint">Tap the Seal to Open</p>
+  </div>
+
+  <div id="sparkle-layer"></div>
+</section>
+
+<!-- ============================================= -->
+<!-- MAIN INVITATION (hidden until seal opens)      -->
+<!-- ============================================= -->
+<main id="invitation" hidden>
+
+  <!-- Floating music control -->
+  <button id="music-toggle" aria-label="Play or pause music">
+    <svg id="icon-play" viewBox="0 0 24 24" fill="none"><path d="M6 4L20 12L6 20V4Z" fill="currentColor"/></svg>
+    <svg id="icon-pause" viewBox="0 0 24 24" fill="none" style="display:none"><rect x="5" y="4" width="4" height="16" rx="1" fill="currentColor"/><rect x="15" y="4" width="4" height="16" rx="1" fill="currentColor"/></svg>
+    <span class="music-ring"></span>
+  </button>
+  <audio id="nasheed-audio" src="assets/nasheed.mp3" loop preload="auto"></audio>
+
+  <!-- ===================== SECTION 1 : HEADLINE ===================== -->
+  <section class="section" id="section-headline">
+    <div class="reveal">
+      <h1 class="eyebrow-heading">NIKAH INVITATION</h1>
+      <div class="gold-divider"><span></span><i>❖</i><span></span></div>
+    </div>
+
+    <p class="reveal intro-line">With the Infinite Mercy and Blessings of Allah (SWT)</p>
+
+    <p class="reveal intro-line">
+      We are delighted to invite you and your family to honor us with your gracious presence
+      at the Nikah ceremony of
+    </p>
+
+    <div class="reveal couple-names">
+      <span class="name">Wafia</span>
+      <span class="ampersand">&amp;</span>
+      <span class="name">Mohamed Raasim</span>
+    </div>
+
+    <p class="reveal blessing-line">
+      Your gracious presence and heartfelt duas will be our greatest blessing on this joyous occasion.
+    </p>
+  </section>
+
+  <!-- ===================== SECTION 2 : CEREMONY DETAILS ===================== -->
+  <section class="section" id="section-ceremony">
+    <h2 class="reveal section-heading">Nikah Ceremony</h2>
+    <div class="gold-divider reveal"><span></span><i>❖</i><span></span></div>
+
+    <div class="detail-cards">
+      <div class="glass-card reveal">
+        <span class="card-icon">📅</span>
+        <p class="card-title">Monday</p>
+        <p class="card-sub">03 August 2026</p>
+      </div>
+      <div class="glass-card reveal">
+        <span class="card-icon">🕐</span>
+        <p class="card-title">12:00 Noon</p>
+        <p class="card-sub">Indian Standard Time</p>
+      </div>
+      <div class="glass-card reveal">
+        <span class="card-icon">📍</span>
+        <p class="card-title">Jamiul Masjid</p>
+        <p class="card-sub">Adiyakkamangalam</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3 : COUNTDOWN ===================== -->
+  <section class="section" id="section-countdown">
+    <h2 class="reveal section-heading">Countdown to Our Nikah</h2>
+    <div class="gold-divider reveal"><span></span><i>❖</i><span></span></div>
+
+    <div class="countdown-grid reveal" id="countdown" data-target="2026-08-03T12:00:00+05:30">
+      <div class="countdown-card">
+        <span class="countdown-number" id="cd-days">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-card">
+        <span class="countdown-number" id="cd-hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-card">
+        <span class="countdown-number" id="cd-minutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-card">
+        <span class="countdown-number" id="cd-seconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4 : VENUE ===================== -->
+  <section class="section" id="section-venue">
+    <h2 class="reveal section-heading">Venue</h2>
+    <div class="gold-divider reveal"><span></span><i>❖</i><span></span></div>
+
+    <div class="map-frame reveal">
+      <iframe
+        src="https://www.google.com/maps?q=Jamiul+Masjid+Adiyakkamangalam&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+        title="Venue location map">
+      </iframe>
+    </div>
+
+    <div class="venue-image-wrap reveal">
+      <img src="assets/mosque.jpg" alt="Jamiul Masjid, Adiyakkamangalam" loading="lazy" class="venue-image">
+    </div>
+
+    <a
+      class="gold-button reveal"
+      id="maps-button"
+      href="https://www.google.com/maps/search/?api=1&query=Jamiul+Masjid+Adiyakkamangalam"
+      target="_blank" rel="noopener noreferrer">
+      📍 Open in Google Maps
+    </a>
+  </section>
+
+  <!-- ===================== SECTION 5 : CONTACT ===================== -->
+  <section class="section" id="section-contact">
+    <h2 class="reveal section-heading">Contact Details</h2>
+    <div class="gold-divider reveal"><span></span><i>❖</i><span></span></div>
+
+    <div class="detail-cards">
+      <div class="glass-card reveal">
+        <span class="card-icon">👤</span>
+        <p class="card-title">Mr. A. Jahir Hussain</p>
+      </div>
+      <div class="glass-card reveal">
+        <span class="card-icon">📍</span>
+        <p class="card-title">Adiyakkamangalam</p>
+      </div>
+      <div class="glass-card reveal">
+        <span class="card-icon">📞</span>
+        <a class="card-title contact-link" href="tel:+919385438493">+91 93854 38493</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 6 : DUA ===================== -->
+  <section class="section" id="section-dua">
+    <p class="reveal dua-arabic">اللَّهُمَّ بَارِكْ لَهُمَا وَبَارِكْ عَلَيْهِمَا وَاجْمَعْ بَيْنَهُمَا فِي خَيْرٍ</p>
+    <p class="reveal dua-translation">
+      "O Allah, bless them, shower Your blessings upon them, and unite them together in goodness."
+    </p>
+  </section>
+
+  <!-- ===================== SECTION 7 : THANK YOU ===================== -->
+  <section class="section" id="section-thankyou">
+    <h2 class="reveal section-heading large">Thank You</h2>
+    <div class="gold-divider reveal"><span></span><i>❖</i><span></span></div>
+
+    <p class="reveal thankyou-line">Thank you for your presence and sincere duas.</p>
+    <p class="reveal thankyou-line">May Allah (SWT) reward you with abundant blessings.</p>
+
+    <p class="reveal thankyou-arabic">جَزَاكُمُ ٱللَّٰهُ خَيْرًا</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
